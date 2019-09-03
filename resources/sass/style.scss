@@ -1,0 +1,851 @@
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-UltraLight.otf') format('opentype');
+  font-weight: 100;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-UltraLightItalic.otf') format('opentype');
+  font-weight: 100;
+  font-family: 'HelveticaNeueCyr';
+  font-style: italic;
+}
+
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-Light.otf') format('opentype');
+  font-weight: 200;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-LightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-family: 'HelveticaNeueCyr';
+  font-style: italic;
+}
+
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-Roman.otf') format('opentype');
+  font-weight: 300;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-Black.otf') format('opentype');
+  font-weight: 400;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/HelveticaNeueCyr-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-family: 'HelveticaNeueCyr';
+  font-style: italic;
+}
+
+a, button {
+  cursor: pointer
+}
+
+.modal-md {
+  max-width: 550px;
+}
+
+.modal-lg {
+  max-width: 950px;
+}
+
+#app * {
+  font-family: 'HelveticaNeueCyr';
+}
+
+#app .fa {
+  font-family: FontAwesome;
+}
+
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.black {
+  color: black !important;
+}
+
+.white {
+  color: white !important;
+}
+
+.main-color {
+  color: #fea723 !important;
+}
+
+.main-color-bg {
+  background: #fea723;
+}
+
+.bg-grey {
+  background: #fdfdfd;
+}
+
+.text-normal {
+  text-transform: none;
+}
+
+#header {
+  background: white;
+  padding-top: 25px;
+  padding-bottom: 64px;
+}
+
+#header .logo img {
+  width: 190px;
+  height: auto;
+}
+
+#header .event-logo {
+  font-size: 14px;
+}
+
+#header .event-logo img {
+  width: 32px;
+  height: auto;
+}
+
+#top {
+  background-image: url('../img/top-bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+#top-third {
+  background-image: url('../img/header-bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 230px;
+  margin-top: -5px;
+}
+
+#countdown-container #sec {
+  display: none !important;
+}
+
+#countdown-container h4 {
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+
+.timeTo.timeTo-black div {
+  background: white !important;
+  color: #fea723 !important;
+}
+
+#countdown-container .timeTo figcaption {
+  text-align: left;;
+  color: black;
+  font-size: 10px;
+  font-weight: 200;
+  margin-top: 18px;
+}
+
+#countdown-container .timeTo span {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 24px;
+  padding-right: 5px;
+}
+
+#countdown-container .timeTo ul {
+  left: 12px;
+}
+
+.timeTo ul li {
+  font-size: 56px;
+  top: 116px;
+  height: 116px;
+  padding: 29px 0 !important;
+}
+
+.timeTo.timeTo-black div {
+  height: 116px;
+  width: 56px;
+}
+
+.timeTo.timeTo-black div {
+  border: none !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#countdown-container {
+  padding: 32px 5px;
+  background: #fea723;
+  border-radius: 5px;
+  min-height: 290px;
+}
+
+#top h1#event-title {
+  font-size: 72px;
+  color: #fea723;
+  margin-bottom: 60px;
+}
+
+#top .desc p {
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+#top #event-date {
+  font-size: 22px;
+  margin-top: 72px;
+  letter-spacing: 2px;
+}
+
+#top #top-second {
+  margin-top: 310px;
+}
+
+#top .sub-desc {
+  margin-bottom: 16px;
+}
+
+#top .more-desc {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+#top-second h3 {
+  font-size: 26px;
+  line-height: 1;
+}
+
+#top .full img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#top .full .two-span:hover {
+  color: #fea723;
+  text-decoration: none;
+}
+
+#top .full .two-span {
+  color: white;
+  text-decoration: underline;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+#event .energy-blocks {
+  padding-top: 32px;
+}
+
+#event h2 {
+  font-size: 35px;
+  margin-bottom: 75px;
+}
+
+.energy img {
+  width: 200px;
+  height: auto;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+
+.energy-blocks p {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+#girl {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+a.orange-event {
+  padding: 20px 70px;
+  display: inline-block;
+  color: black !important;
+  font-size: 26px;
+  margin-top: 48px;
+  border-radius: 4px;
+
+}
+
+#reset .modal-body p {
+  font-size: 18px;
+}
+
+#reset .modal-body img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+a.orange-event:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+#clip {
+  cursor: pointer;
+}
+
+#VoteModal .modal-body p {
+  font-size: 21px;
+}
+
+#PrivacyModal .modal-body p {
+  font-size: 13px;
+}
+
+#prize h2 {
+  padding: 390px 0 155px 0;
+  font-size: 54px;
+}
+
+#prize {
+  background-image: url('../img/cerl.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 36px;
+}
+
+
+#prize p.other {
+  font-size: 28px;
+  padding-top: 115px;
+}
+
+#prize .magic img {
+  margin-top: 62px;
+  margin-bottom: 62px;
+}
+
+#prize .other-row img {
+  width: 100%;
+  height: auto
+}
+
+#prize_two {
+  background: black;
+  padding-top: 16px;
+  padding-bottom: 44px;
+  margin-top: -5px;
+}
+
+#prize_two h3 {
+  font-size: 28px;
+  color: white
+}
+
+#prize_two img {
+  width: 100%;
+  height: auto;
+  padding-top: 110px;
+}
+
+#jobs {
+  padding-top: 66px;
+  padding-bottom: 90px;
+}
+
+#jobs.all-jobs h2 {
+  margin-bottom: 0;
+}
+
+#jobs h2 {
+  margin-bottom: 100px;
+}
+
+
+.job-share p {
+  font-size: 12px;
+  color: black
+}
+
+.job-content {
+  padding: 22px 38px;
+}
+
+.job {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.author-name {
+  color: #2e2281;
+  font-size: 12px;
+}
+
+.job-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.job-share ul {
+  padding-left: 0;
+}
+
+.job-share ul > li {
+  display: inline-block;
+  list-style: none;
+}
+
+#jobs {
+  .card .img-fluid {
+    max-height: 400px;
+  }
+
+  .job-title .fa-edit:hover {
+    color: #fea723;
+  }
+
+  .sort.sort-orange:hover {
+    border: 3px solid #fea723;
+    color: black;
+    background: none;
+  }
+
+  .all-jobs-row {
+    padding-top: 80px;
+  }
+
+  .sort:hover, .sort.active {
+    background: #fea723;
+    color: white;
+    text-decoration: none;
+  }
+
+  .sort {
+    padding: 14px 0;
+    border: 3px solid #fea723;
+    font-size: 13px;
+    color: black;
+    width: 234px;
+  }
+
+  .sort.sort-orange {
+    background: #fea723;
+    color: white;
+  }
+
+  .job-block {
+    padding: 20px 20px 20px 35px;
+  }
+
+  .job-title {
+    color: #2e2281;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .job-likes {
+    color: #4c4b48;
+    font-size: 25px;
+  }
+
+  .like-job {
+    cursor: pointer;
+  }
+
+  .like-job.active, .like-job:hover {
+    color: #fea723;
+  }
+
+  .job-author {
+    margin-right: 10px;
+    margin-left: -5px;
+  }
+
+  .author-meta {
+    margin-bottom: 24px;
+  }
+
+  .job-share-title {
+    font-size: 14px;
+  }
+
+  .job-share .fa-stack {
+    color: #909090;
+    border: 1px solid #909090;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .job-share .fa-stack:hover {
+    color: #fea723;
+    border-color: #fea723;
+  }
+
+  .k-lightbox {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    .fa-circle {
+      color: #f6fafd;
+    }
+
+    .fa-search {
+      color: #797a7c;
+    }
+  }
+
+  .k-lightbox:hover {
+    .fa-circle {
+      color: #fea723;
+    }
+
+    .fa-search {
+      color: white;
+    }
+  }
+}
+
+#footer {
+  background: black;
+  color: white;
+  padding: 45px 0 60px 0;
+}
+
+.front-modal {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #fea723;
+    border-color: #fea723;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+  input[name="day"] {
+    margin-right: 12px;
+  }
+
+  input[name="month"] {
+    margin-right: 12px;
+  }
+
+  .reset_pass {
+    text-decoration: underline;
+    font-size: 14px;
+  }
+
+  .modal-header {
+    border-bottom: none;
+    padding-top: 0;
+
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      img {
+        width: 18px;
+        height: auto;
+      }
+    }
+  }
+
+  .modal-content {
+    padding: 50px 80px;
+    border-radius: 0;
+
+    .modal-register:hover {
+      background-color: rgb(254, 167, 35);
+      color: white;
+    }
+
+    .modal-auth {
+      margin-top: 32px;
+    }
+
+    .prmy {
+      position: relative;
+    }
+
+    .field-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 20px;
+      height: 20px;
+      z-index: 2;
+      background-image: url('../img/close_eye.png');
+      background-size: contain;
+    }
+
+    .field-icon.close_eye {
+      background-image: url('../img/open_eye.png');
+    }
+
+    .forgot-password.reset_pass {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+    }
+
+    .modal-register {
+      background-color: white;
+      border: 3px solid rgb(254, 167, 35);
+      color: black;
+      margin-top: 8px;
+      display: block;
+      padding: 12px 60px;
+      font-size: 14px;
+      border-radius: 25px;
+      width: 100%;
+      margin-bottom: 26px;
+    }
+
+    .modal-submit {
+      background-color: rgb(254, 167, 35);
+      display: block;
+      padding: 15px 60px;
+      font-size: 14px;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      width: 100%;
+    }
+
+    .modal-footer {
+      text-align: center;
+      border-top: none;
+      justify-content: center;
+
+    }
+
+    h5.modal-title {
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .modal-body {
+      label {
+        font-size: 12px;
+        font-weight: 200;
+      }
+
+      input[type="text"] {
+        height: 50px;
+      }
+
+      input[type="password"] {
+        height: 50px;
+      }
+
+      input[type="text"], input[type="password"], textarea {
+        border: 3px solid #dddddd;
+        border-radius: 0;
+      }
+
+      #clip {
+        width: 20px;
+        height: auto;
+        margin-left: 20px;
+        display: inline-block;
+      }
+
+      #uploadimage {
+        display: none;
+      }
+    }
+
+    .custom-control.custom-checkbox {
+      padding-left: 2.5rem;
+
+      a {
+        color: #fea723;
+        text-decoration: underline;
+      }
+    }
+
+    .custom-checkbox .custom-control-label::before {
+      border-radius: 0;
+      border: 3px solid #dddddd;
+      width: 20px;
+      height: 20px;
+      top: 1rem;
+      left: -2.5rem;
+    }
+
+    .custom-checkbox .custom-control-label::after {
+      width: 20px;
+      height: 20px;
+      top: 1rem;
+      left: -2.5rem;
+    }
+  }
+
+}
+
+.me-card {
+  border: 2px solid #fea723;;
+}
+
+#RulesModal {
+  ol {
+    counter-reset: li;
+    /*Идентифицируем счетчик и даем ему имя li. З
+     начение не указано - по умолчанию оно равно 0*/
+    list-style: none; /*убираем стандартную нумерацию*/
+  }
+
+  ol>li:before {
+    counter-increment: li;
+    /*Определяем элемент, который будет нумероваться - .
+     Псевдоэлемент before указывает, что содержимое, вставляемое при   помощи content, будет располагаться до пунктов списка. Здесь же значение приращения счетчика -по умолчанию равно 1.*/
+
+    content: counters(li, ".") ". ";
+    /*С помощью свойства content выводится номер списка.
+     counters() означает, что генерируемый текст представляет собой всех счетчиков с таким именем.
+     Точка в кавычках добавляет разделяющую точку цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка*/
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #girl {
+    margin-top: 52px;
+  }
+  .timeTo.timeTo-black div {
+    height: 100px;
+    width: 40px;
+  }
+  .timeTo ul li {
+    top: 100px;
+    height: 100px;
+    padding: 23px 0 !important;
+  }
+  #countdown-container .timeTo ul {
+    left: 6px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .front-modal .modal-content {
+    padding: 12px 0
+  }
+  #countdown-container .timeTo span {
+    padding-top: 5px;
+  }
+  #prize h2 {
+    font-size: 32px;
+  }
+
+
+  .orange-event {
+    font-size: 20px;
+  }
+
+  #top h1#event-title {
+    font-size: 58px;
+  }
+
+  #top .desc p {
+    font-size: 30px;
+  }
+  .timeTo ul li {
+    font-size: 40px;
+    top: 70px;
+    height: 70px;
+    padding: 10px 0 !important;
+  }
+  .timeTo.timeTo-black div {
+    height: 70px;
+    width: 28px;
+  }
+  #countdown-container .timeTo ul {
+    left: 4px;
+  }
+}
+
+@media screen and (min-width: 978px) {
+  #prize .copyright {
+    margin-top: -95px;
+  }
+  #top .full {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #prize h2 {
+    padding: 470px 0 320px 0;
+  }
+  #prize .magic img {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  #prize_two img {
+    padding-top: 140px;
+  }
+  //#prize {
+  //  background-size: 100% 100%;
+  //}
+}
+
+@media screen and (min-width: 2080px) {
+  //#prize {
+  //  background-size: cover;
+  //  background-position: center;
+  //  margin-top: 32px;
+  //}
+}
