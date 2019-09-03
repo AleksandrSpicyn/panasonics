@@ -10,8 +10,9 @@
     <meta property="og:image" content="https://cds.ru/img/social/crystal.png">
     <link rel="shortcut icon" href="/favicon1.ico">
     <title>Panasonic</title>
-    <link href="/cirquedusoleil/public/css/app.css" rel="stylesheet">
-    <script src="/cirquedusoleil/public/css/app.css"></script>
+    <link href="/css/app.css" rel="stylesheet">
+    <script src="/js/app.js"></script>
+    <script>
         mindbox = window.mindbox || function () {
             mindbox.queue.push(arguments);
         };

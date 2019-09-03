@@ -11,14 +11,9 @@
 |
 */
 
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/cirquedusoleil/clear-cache', function() {
-    Artisan::call('cache:clear');
-    return "Cache is cleared";
-});
 Auth::routes(['verify' => true]);
 Route::get('/', 'WelcomeController@index')->name('home');
 Route::get('/jobs', 'JobController@index');
@@ -32,15 +27,6 @@ Route::post('/reset_by_email', 'AuthController@resetByEmail');
 Route::post('/share', 'ShareController@share');
 Route::post('/load-more', 'JobController@loadMore');
 
-Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::patch('/admin/job', 'JobController@update');
-    Route::get('/job/{id}', 'JobController@get');
-    Route::get('/cirquedusoleil/admin', 'AdminController@index');
-    Route::post('/rotate', 'AdminController@rotate');
-    Route::get('/admin/{status}', 'AdminController@index');
-    Route::get('/add_roles', 'AdminController@roles');
-});
-
 Route::middleware(['auth'])->group(function () {
     Route::post('/job', 'JobController@store');
     Route::patch('/job', 'JobController@update');
@@ -49,7 +35,13 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/like', 'LikeController@store');
     Route::post('/logout', 'AuthController@logout');
     Route::post('/switch_password', 'AuthController@switchPassword');
+    Route::middleware(['role:admin'])->group(function () {
+        Route::patch('/admin/job', 'JobController@update');
+        Route::get('/job/{id}', 'JobController@get');
+        Route::get('/admin', 'AdminController@index');
+        Route::post('/rotate', 'AdminController@rotate');
+        Route::get('/admin/{status}', 'AdminController@index');
+        Route::get('/add_roles', 'AdminController@roles');
+    });
+
 });
-
-
-Route::get('/home', 'HomeController@index')->name('home');
